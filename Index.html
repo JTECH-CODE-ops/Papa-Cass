@@ -4,64 +4,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PapaCass Foods</title>
+    <title>PapaCass</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonts/css/all.min.css">
+    <link rel="stylesheet" href="./fonts/css/all.min.css">
+    <link rel="stylesheet" href="./FontsTypes/Rosehot.ttf">
+    <link rel="stylesheet" href="w3css/w3css.css">
 </head>
 
 <body>
-    <header>
-        <h1><img src="./Images/ChefIcon.jpg" id="head">PaPaCass</h1>
-        <img src="./Images/soup1.jpg" id="img1">
-    </header>
-    <div class="sub-header">
-        <h2>WELCOME TO PapaCass Foods.</h2><br><br>
-        <p id="p1">Welcome To PapaCass Foods And Catering Services This Website is Made easy for Food patroits and
-            <br>users to get easy access to our contents,location
-            <br>Services and so much more
-            <br>through their smartphones
-            <br>and other electonic devices.
-        </p>
-        <div class="body">
-            <h3>Here Are Some Of Our Delicious Food</h3><br>
-            <p>Bitter-Leaf Soup</p><br>
-            <img src="./Images/bitterleaf (2).jpg" id="img2"><br><br>
-            <p>Eguisi Soup</p><br>
-            <img src="./Images/eguisi.jpg" id="img2"><br><br>
-            <p>Ogbono Soup</p><br>
-            <img src="./Images/ogbono.jpg" id="img2"><br><br>
-            <p>Okazi Soup</p><br>
-            <img src="./Images/okazi.jpg" id="img2"><br><br>
-            <p>Jollof Rice</p><br>
-            <img src="./Images/jollof.jpg" id="img2" height=""><br><br>
-            <p>Fried Rice</p><br>
-            <img src="./Images/fried.jpg" id="img2"><br><br>
-            <p>Okro Soup</p><br>
-            <img src="./Images/okro.jpg" id="img2"><br><br>
-            <h4>Place Your Order Now</h4><br><br>
-            <form action="https://formly.email/submit" method="POST">
+    <!-- header -->
+    <div class="header">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><img src="./Images/Menu Icon.jpg"></a></li>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
 
-                <input type="hidden" name="access_key" value="990206f480044defb0facb63ad346635"><br>
-                <input type="text" placeholder="Enter your name" name="990206f480044defb0facb63ad346635" id="name"
-                    required><br><br>
-                <input type="text" placeholder="Enter your name" name="990206f480044defb0facb63ad346635" id="email"
-                    required><br><br>
-                <input type="number" placeholder="Enter phone number" name="990206f480044defb0facb63ad346635" id="email"
-                    required><br><br>
-                <textarea name="message" placeholder="Place your order" id="message" rows="4" required></textarea><br>
-                <button type="submit">Place Order</button><br><br>
-            </form>
-            <div class="sub-footer">
-                <a href="https://www.youtube.com/@Agbajames-le7zs"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61564413655586"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/agbamunachis?igsh=MTc4ZHpweGhmbDk5ZA=="><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://t.me/+VVTsPImefd01NGM0"><i class="fa-brands fa-telegram"></i></a>
-                <a href="https://x.com/Michealkingboy"><i class="fa-brands fa-square-x-twitter"></i></a>
-            </div>
-        </div>
+            <ul>
+                <li id="l1"><a href="#">PAPACASS-FOODS</a></li>
+                <li class="hideonMobile"><a href="#">Home</a></li>
+                <li class="hideonMobile"><a href="#">About Us</a></li>
+                <li class="hideonMobile"><a href="#">Services</a></li>
+                <li onclick="showSidebar()"><a href="#"><img src="./Images/Menu Icon.jpg"></a></li>
+            </ul>
+
+        </nav>
+    </div>
+    <div class="BodyText">
+        PapaCass Foods And Catering Services<br>Serving Nigerian Dishes Ranging From
+        <br><b>Differnt Recipes You WILL enjoy</b><br><b id="b1">We Are Located in BlockD10A<br>Auto-parts TRADEFAIR,
+            COMPLEX<br>Lagos, Nigeria</b><br>
+        <button id="btn1">READ MORE</button>
 
     </div>
+    <div class="BodyImage">
+        <img src="./Image/a74bcb0ac99a32475e945016731d8d39.jpg" class="img1">
+        <img src="./Image/bitterleaf (2).jpg" class="img2">
+        <img src="./Image/ogbono.jpg" class="img3">
+    </div>
+    <!-- header2 -->
+    <div class="header2">
+        Enjoy Our<br>Delicious Meal<br>
+        <p id="p2">A meal made for you with a standard and quality cooking<br>We offer a wide range of possibilities to
+            our customers providung them the best of the best</p><button id="btn2">Book a Table</button>
+    </div>
+    <div class="BImage">
+        <img id="img4" src="./Image/hero.png">
+    </div>
+    <div class="Fa-icons">
+        <div class="Master"><i class="fa-solid fa-utensils"></i><br><br><b
+                style="font-size: 18px; color: black;">Quality
+                Food</b><br>Our does'nt just taste good they offer<br>Vital Nutrients that Keep the body healthy.</div>
+        <div class="Quality"><i class="fa-solid fa-person"></i><br><br><b style="font-size: 18px; color: black;">Master
+                Chefs</b><br>We offer dishes made by master chefs<br>Who cook with passion.</div>
+        <div class="Online"><i class="fa-solid fa-cart-shopping"></i><br><br><b
+                style="font-size: 18px; color: black;">Online Order</b><br>Where ever you are located and need our food
+            we
+            will get it to you No matter the<br>place no matter cost.</div>
+        <div class="Service"><i class="fa-solid fa-headphones"></i><br><br><b
+                style="font-size: 18px; color: black;">24/7
+                Service</b><br>We offer 24/7 service on our phone services to meet your needs,We are ready to serve.
+        </div>
+    </div>
+    <!-- Four-image -->
+    <div class="imgd">
+        <img src="./Images/2284909d0766b118cec3550c914bee6c.jpg" class="bdimg1">
+        <img src="./Images/d8b5581fb6d92213e7d1522b767bf8a6.jpg" class="bdimg2">
+        <img src="./Images/b90292431af46d580f955168d576c34a.jpg" class="bdimg3">
+        <img src="./Images/95fc37d946f118308477d3a1103d9e5f.jpg" class="bdimg4">
+    </div>
+    <h2 id="Hwelc">About Us --</h2><br>
+    <div class="WELCOME">
+        <p id="p1">Welcome to <i class="fa-solid fa-utensils"></i> Papa-Cass Foods</p>
+        We offer conveniency to the highest level to provided you the best<br>
+        user-experience, At the highest level.<br><br>
+        We are committed to making you happy and satisfied to the best of<br>
+        Our capacity we look forward to seeing you.<br>
+        <h2 id="Hwelc1">25<p id="p3">Years of<br><b id="b2">EXPERIENCE</b></p>
+        </h2>
+        <h2 id="Hwelc2">50<p id="p3">Popular<br><b id="b2">MASTER CHEFS</b></p>
+        </h2>
+        <button id="btn3">READ MORE</button>
+    </div>
+    <!-- Breakfast-lunch-dinner -->
+    <div class="Food-menu">
+        <h2 id="food-menu">-- Food Menu --</h2>
+        <h2 id="foood-menu1">Most Popular Items</h2>
+    </div>
+    <div class="Food-icon">
+        <i class="fa-solid fa-mug-hot">
+            <t id="A1">Breakfast</t>
+        </i>
+        <i class="fa-solid fa-bowl-food">
+            <t id="A1">Lunch
+        </i>
+        <i class="fa-solid fa-utensils" id="fa-utensils">
+            <t id="A1">Dinner
+        </i>
+    </div>
+    <div class="Food-list">
+        <div class="sub-list">
+            <img src="./Images/eguisi.jpg" id="lists">
+            <p id="A2">Equisi Soup</p>
+        </div>
+        <div class="sub-list1">
+            <img src="./Images/okazi.jpg" id="lists">
+            <p id="A2">Okazi Soup</p>
+        </div>
+        <div class="sub-list2">
+            <img src="./Images/bitterleaf (2).jpg" id="lists">
+            <p id="A2">Bitterleaf Soup</p>
+        </div>
+        <div class="Food-list2">
+            <div class="sub-list3"><img src="./Images/ogbono.jpg" id="lists">
+                <p id="A2">Ogbono Soup</p>
+            </div>
+            <div class="sub-list4"><img src="./Images/jollof2.jpg" id="lists">
+                <p id="A2">Jollof Rice</p>
+            </div>
+            <div class="sub-list5"><img src="./Images/fried2.jpg" id="lists">
+                <p id="A2">Fried Rice</p>
+            </div>
+        </div>
+    </div>
+    <div class="VIDINP">
+        <div class="vid">
+            <video controls src="./Image/Papa-Cass.mp4"></video>
+        </div>
+        <div class="INPUT">
+            <form action="https://formly.email/submit" method="POST">
+                
+                <input type="hidden" name="access_key" value="990206f480044defb0facb63ad346635">
+                <p id="A3">Reservation --</p>
+                <h2 id="A4">Book Your Order Online</h2>
+                <div class="Form">
+                <input type="text" placeholder="Your Name" name="990206f480044defb0facb63ad346635" id="name" required>
+                <input type="text" placeholder="Your Email" name="990206f480044defb0facb63ad346635" id="email" required>
+                <input type="number" placeholder="Your Phone-number" name="990206f480044defb0facb63ad346635" id="number">
+                <input type="text" placeholder="Your Location" name="990206f480044defb0facb63ad346635" id="location">
+                <textarea name="990206f480044defb0facb63ad346635" id="message" placeholder="Describe Your Order" required></textarea>
+                <button id="button" type="submit">BOOK NOW</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="Team">
+        <p id="A5">-- Team Member --</p>
+        <h2 id="A6">Our Master Chef</h2>
+        <div class="member">
+            <img src="./Image/PAPA-removebg-preview.png" id="ceo"><br><br><br>
+        Full Name: Agba Gilbert<br>
+        Nick Name: Papa-Cass
+        </div>
+    </div>
+    <div class="Testimonial">
+        <p id="A7">-- Testimonial --</p>
+        <h id="A8">Our Client Say!!!</h>
+        <div class="client">
+            I recommend them to anyone<br>
+            who will like to hire them<br>
+            for contracts, because they are<br>
+            good at what they do,i rate<br>
+            them 👍👍👍👍👍👍.<br>
+            <img src="./Image/adesina motunrayo.jpg" id="A9"> Adesina Moturanyo
+        </div>
+    </div>
+    <div class="Footer">
+        <div class="Company">
+            <h2 id="company">Company --</h2>
+            About Us<br>
+            Contact Us<br>
+            Reservation<br>
+            Privacy Policy<br>
+            Terms & Condition<br><br>
+            <h2 id="company">Contact --</h2>
+            <i class="fa-solid fa-location-dot"> Trade-fair complex</i><br> 
+            <i class="fa-solid fa-phone"> +23407025361354</i><br>
+            <i class="fa-solid fa-envelope"> jamesagba823@gmail.com</i><br>
+           <a href="https://www.youtube.com/@Agbajames-le7zs"><img id="A10" src="./Image/1bd6cc26ffe2bdf3ce17cb2ca91a6df2.jpg"></a>
+           <a href="https://www.facebook.com/profile.php?id=61564413655586"><img id="A10" src="./Image/5236c90325a5530b5dc097cd44ddce59.jpg"></a>
+           <a href="https://chat.whatsapp.com/GjEgF5OpBd5Cr2oaosnkK2?mode=ac_t"><img id="A10" src="./Image/54003eed90c359486ec100dd10c4896a.jpg"></a>
+           <a href="https://www.instagram.com/agbamunachis?igsh=MTc4ZHpweGhmbDk5ZA=="><img id="A10" src="./Image/577440aa25d46c5cc8024a4fc7855d77.jpg"></a>
+        </div>
+        <div class="Contact">
+            <h2 id="company">Opening --</h2>
+            Monday - Saturday<br>
+            9AM - 5PM<br><br>
+            <h2 id="company">Newsletter --</h2>
+            <p id="A13">
+            Type in Your email to stay updated<br>with us.
+            </p>
+            <form action="https://formly.email/submit" method="POST">
 
+                <input type="hidden" name="access_key" value="990206f480044defb0facb63ad346635">
+            <input required name="990206f480044defb0facb63ad346635" type="text" id="A11"><button id="A12">SIGN UP</button>
+        </form>
+        </div>
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+            sidebar.style.transition = 'display 1s ease-in-out'
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+
+        }
+    </script>
 </body>
 
 </html>

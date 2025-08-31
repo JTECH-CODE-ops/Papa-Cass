@@ -1,139 +1,1568 @@
 * {
     margin: 0;
     padding: 0;
-    animation: opacity 5s;
-    font-family: monospace;
-}
-
-@keyframes opacity {
-    from{opacity: 0;}
-}
-
-h1 {
-    color: gold;
-    position: absolute;
-    top: -2rem;
-    text-decoration: 5px underline;
-}
-
-header {
-    font-family: monospace;
-    padding: 1rem;
-
-}
-
-#head {
-    width: 4rem;
-    height: 4rem;
-    position: relative;
-    top: 1.7rem;
-}
-
-#img1 {
-    position: absolute;
-    border-radius: 9px;
-    top: 5rem;
-    width: 18rem;
-    height: 18rem;
-    animation: size 4s
-        /*timing-function delay iteration-count fill-mode*/
-    ;
-}
-
-@keyframes size {
-    from {
-        width: 0;
-    }
-
-}
-
-.sub-header {
-    position: absolute;
-    top: 25rem;
+    box-sizing: border-box;
     text-align: center;
 }
 
-h2 {
-    font-family: monospace;
+@font-face {
+    font-family: 'Super';
+    src: url(./FontsTypes/SUPERADO.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Play';
+    src: url(./FontsTypes/SuperPeanut-PVAK7.ttf);
+}
+
+@font-face {
+    font-family: 'Liber';
+    src: url(./FontsTypes/Vanger.ttf);
+}
+
+@font-face {
+    font-family: 'Signature';
+    src: url(./FontsTypes/MoneteraSignatura.otf);
+}
+
+body {
+    min-height: 100vh;
+    background: url(./Images/abstract-dark-background-with-flowing-colouful-waves.jpg);
+    background-size: cover;
+    height: 80rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: position;
+    animation-duration: 3s;
+}
+
+@keyframes position {
+    from{transform: translateY(60rem); opacity: 0%;}
+}
+
+
+
+
+
+img {
+    width: 25px;
+    border-radius: 5px;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    font-family: 'Super';
+    height: 50px;
+}
+
+nav a {
+    height: 50px;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover {
     background-color: gold;
+    border-radius: 5px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: 900;
+    color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+li {
+    color: aqua;
+}
+
+nav li a .firstlist:first-child {
+    color: blue;
+}
+
+a {
+    font-family: monospace;
+}
+
+#l1 {
+    background-color: gold;
+    border-radius: 5px;
+    color: azure;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: orangered;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px aqua;
+    display: none;
+    font-weight: 700;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.BodyText {
+    color: white;
+    font-size: 28px;
+    position: relative;
+    font-family: 'Super';
+    top: 5rem;
+    left: 1.5rem;
+    text-align: left;
+
+}
+
+b {
+    font-size: 34px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: orangered;
+}
+
+.BodyImage {
+    position: relative;
+    left: 17rem;
+}
+
+#btn1 {
+    font-size: 18px;
+    font-family: 'Super';
+    padding: 6px;
+    padding-right: 40px;
+    border: 0;
+    background-color: orangered;
+    padding-left: 40px;
+    border-radius: 25px;
+}
+
+#b1 {
+    font-size: 18px;
+    color: white;
+}
+
+.img1 {
+    height: 130px;
+    border: 5px solid white;
+    width: 127px;
+    border-bottom-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+}
+
+.img2 {
+    width: 127px;
+    border: 5px solid white;
+    height: 130px;
+    position: relative;
+    bottom: 10rem;
+    left: -3rem;
+    border-bottom-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+}
+
+.img3 {
+    border: 5px solid white;
+    height: 130px;
+    width: 127px;
+    position: relative;
+    left: -8rem;
+    border-bottom-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+}
+
+.header2 {
+    font-family: play;
+    position: relative;
+    text-align: center;
+    top: 4rem;
+    color: white;
+    font-size: 28px;
+}
+
+#p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#btn2 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px;
+    font-weight: 700;
+    padding-right: 38px;
     text-transform: uppercase;
+    border: 0;
+    color: white;
+    background-color: orangered;
+    padding-left: 38px;
+    border-radius: 5px;
+}
+
+#img4 {
+    position: relative;
+    text-align: center;
+    top: 5.5rem;
+    height: 350px;
+    border-bottom-left-radius: 12rem;
+    border-bottom-right-radius: 12rem;
+    border-top-right-radius: 12rem;
+    border-top-left-radius: 12rem;
+    width: 350px;
+    animation: spin 30s linear infinite;
+}
+
+i {
+    margin-top: 2rem;
+    color: orangered;
+    font-size: 30px;
+}
+
+.Fa-icons {
+    margin-left: 5rem;
+}
+
+.Master {
+    position: relative;
+    left: 47rem;
+    top: 19rem;
+    font-size: 12px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px grey;
+    text-align: left;
+    width: 270px;
+    height: 180px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.Quality {
+    position: relative;
+    top: 7rem;
+    left: 27rem;
+    font-size: 12px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px grey;
+    text-align: left;
+    width: 270px;
+    height: 180px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.Online {
+    position: relative;
+    left: 27rem;
+    top: 8rem;
+    font-size: 12px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px grey;
+    text-align: left;
+    width: 270px;
+    height: 180px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.Service {
+    position: relative;
+    left: 47rem;
+    top: -4rem;
+    font-size: 12px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px grey;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 270px;
+    height: 180px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.Service:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.Master:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.Quality:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.Online:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.imgd {
+    margin-left: 20rem;
+}
+
+.bdimg1 {
+    height: 200px;
+    position: relative;
+    left: -6rem;
+    border-radius: 0;
+    width: 210px;
+}
+
+.bdimg2 {
+    width: 150px;
+    position: relative;
+    top: 1.5rem;
+    left: -5.5rem;
+    border-radius: 0;
+    height: 150px;
+}
+
+.bdimg3 {
+    width: 210px;
+    position: relative;
+    top: 14rem;
+    left: -15.8rem;
+    border-radius: 0;
+    height: 200px;
+}
+
+.bdimg4 {
+    width: 150px;
+    position: relative;
+    top: 12.3rem;
+    left: -41rem;
+    border-radius: 0;
+    height: 150px;
+}
+
+.WELCOME {
+    position: relative;
+    right: 14rem;
+
+}
+
+#Hwelc {
+    color: orangered;
+    font-family: 'Signature';
+    position: relative;
+    top: 16rem;
+}
+
+#Hwelc {
+    position: relative;
+    right: 12rem;
+}
+
+.WELCOME {
+    position: relative;
+    top: 14rem;
+    right: 3rem;
 }
 
 #p1 {
     font-weight: 900;
-    font-size: 18px;
-    font-family: monospace;
-    text-align: left;
-    transition: color 0.5s ease-in-out;
+    font-size: 28px;
 }
 
-#p1:hover {
-    color: royalblue;
-}
+#p3 {
 
-.body {
-    height: 115rem;
-    background-color: gold;
-    font-size: 18px;
+    font-size: 15px;
     position: relative;
-    top: 5rem;
+    top: -2.5rem;
+    left: 7rem;
+    color: black;
 }
 
-h3 {
-    text-decoration: 5px underline aqua;
+#b2 {
+    position: relative;
+    font-size: 24px;
+    top: 0.5rem;
+    color: black;
 }
 
-#img2 {
-    height: 10rem;
-    border-radius: 10px;
-    width: 10rem;
+#Hwelc1 {
+    position: relative;
+    left: 28rem;
+    font-weight: 900;
+    background: local;
+    background-color: transparent;
+    width: 120px;
+    height: 40px;
+    color: orangered;
+    border-left: 4px solid orangered;
 }
 
-h4 {
-    padding: 2rem;
-    border-radius: 20px;
-    width: 15rem;
-    background-color: burlywood;
-    animation-name: pulse;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+#Hwelc2 {
+    position: relative;
+    left: 52rem;
+    font-weight: 900;
+    top: -3.5rem;
+    background: local;
+    background-color: transparent;
+    width: 120px;
+    height: 40px;
+    color: orangered;
+    border-left: 4px solid orangered;
 }
 
-input{
-    padding: 4px;
-}
-
-button {
-    padding: 8px;
+#btn3 {
+    font-size: 15px;
+    position: relative;
+    left: -12rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    padding-right: 38px;
+    text-transform: uppercase;
+    border: 0;
     color: white;
-    background: black;
-    border: none;
-    border-radius: 20px;
+    background-color: orangered;
+    padding-left: 38px;
 }
-form {
+
+#p4 {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.FoodMenu {
+    position: relative;
+    top: 18rem;
+}
+
+#Hwelc3 {
+    color: orangered;
+    font-family: 'Signature';
+}
+
+.fa-coffee {
+    margin: 1rem;
+}
+
+.fa-bowl-food {
+    margin: 1rem;
+}
+
+.fa-utensils {
+    margin: 1rem;
+}
+
+.Food {
+    color: black;
+    position: relative;
+    left: -4rem;
+    top: 1.5rem;
+    text-decoration: none;
+}
+
+.Food {
+    color: black;
+    position: relative;
+    left: -4rem;
+    top: 1.5rem;
+    text-decoration: none;
+}
+
+.FoodMenu .Food::after {
+    content: '';
     position: absolute;
-    height: 22rem;
-    left: 1rem;
-    width: 17rem;
-    border: 2px solid bisque;
+    width: 0;
+    left: 5px;
+    background-color: orangered;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    height: 3px;
+    bottom: -5px;
 }
 
-i {
-    margin-left: 1.4rem;
-    font-size: 20px;
+.Food:hover::after {
+    width: 100%;
+    opacity: 1;
 }
 
-#img2 {
-    height: 4rem;
-    width: 6rem;
+
+
+.Foodlist {
+    position: relative;
+
+    top: 19rem;
+    left: -12rem;
 }
 
-.sub-footer {
+.Foodlist1 {
+    position: relative;
+
+    top: 13rem;
+    left: -4.8rem;
+}
+
+.Foodlist2 {
+    position: relative;
+
+    top: 10rem;
+    left: -5rem;
+}
+
+.Foodlist3 {
+    position: relative;
+
+    top: 6rem;
+    left: -4.5rem;
+}
+
+.Foodlist4 {
+    position: relative;
+
+    top: 4rem;
+    left: -4.5rem;
+}
+
+.Foodlist5 {
+    position: relative;
+    color: black;
+    top: 3rem;
+    left: -4.7rem;
+}
+
+#p5 {
+    position: relative;
+    top: -3.4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    left: 30rem;
+}
+
+#p6 {
+    position: relative;
+    top: -5.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    left: 37rem;
+}
+
+#b5 {
+    font-size: 30px;
+    font-family: 'liber';
+    margin: 1rem;
+}
+
+.italics {
+    position: relative;
+    left: 12.5rem;
+    font-family: monospace;
+    top: -4rem;
+    color: black;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.italics1 {
+    position: relative;
+    left: -6rem;
+    font-family: monospace;
+    top: 2rem;
+    color: black;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.italics2 {
+    position: relative;
+    left: -6rem;
+    font-family: monospace;
+    top: 2rem;
+    color: black;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.italics3 {
+    position: relative;
+    left: -7em;
+    font-family: monospace;
+    top: 2rem;
+    color: black;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.italics4 {
+    position: relative;
+    left: -6rem;
+    font-family: monospace;
+    top: 2rem;
+    color: black;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.italics5 {
+    position: relative;
+    left: -9rem;
+    font-family: monospace;
+    top: 2rem;
+    color: black;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.list1 {
+    height: 120px;
+    width: 120px;
+}
+
+.Food-menu {
     position: relative;
     top: 28rem;
-    text-align: left;
 }
 
-@keyframes pulse {
-    from{opacity: 0;}
+#food-menu {
+    font-family: 'signature';
+    color: orangered;
+}
+
+#foood-menu1 {
+    font-family: 'Super';
+    font-weight: 700;
+}
+
+.Food-icon {
+    position: relative;
+    top: 27rem;
+}
+
+.fa-mug-hot {
+    margin-left: 1rem;
+}
+
+#A1 {
+    color: black;
+    margin: 1rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 1s ease-in-out;
+}
+
+#A1:hover {
+    color: aqua;
+}
+
+.Food-list {
+    position: relative;
+    top: 30rem;
+    left: 4rem;
+    display: flex;
+}
+
+.Food-list2 {
+    position: relative;
+    top: 20rem;
+    left: -40rem;
+    display: flex;
+}
+
+.sub-list {
+    padding: 1rem;
+    width: 12rem;
+    position: relative;
+    left: 20rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px gray;
+    background-color: white;
+    height: 12rem;
+}
+
+.sub-list1 {
+    padding: 1rem;
+    width: 12rem;
+    margin-left: 2rem;
+    position: relative;
+    left: 20rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px gray;
+    background-color: white;
+    height: 12rem;
+}
+
+.sub-list2 {
+    padding: 1rem;
+    margin-left: 2rem;
+    width: 12rem;
+    position: relative;
+    left: 20rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px gray;
+    background-color: white;
+    height: 12rem;
+}
+
+.sub-list3 {
+    padding: 1rem;
+    width: 12rem;
+    position: relative;
+    left: 20rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px gray;
+    background-color: white;
+    height: 12rem;
+}
+
+.sub-list4 {
+    padding: 1rem;
+    margin-left: 2rem;
+    width: 12rem;
+    position: relative;
+    left: 20rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px gray;
+    background-color: white;
+    height: 12rem;
+}
+
+.sub-list5 {
+    padding: 1rem;
+    margin-left: 2rem;
+    width: 12rem;
+    position: relative;
+    left: 20rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px gray;
+    background-color: white;
+    height: 12rem;
+}
+
+#lists {
+    border-radius: 0;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 12px;
+    background-color: bisque;
+}
+
+#A2 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.VIDINP {
+    position: relative;
+    top: 55rem;
+    left: -14rem;
+}
+
+video {
+    width: 600px;
+    height: 449px;
+    position: relative;
+    left: -10rem;
+    top: 3rem;
+}
+
+.INPUT {
+    background-color: rgb(4, 4, 34);
+    width: 45rem;
+    height: 29.7rem;
+    position: relative;
+    left: 55rem;
+    top: -27rem;
+}
+
+#A4 {
+    color: white;
+    position: relative;
+    left: -5rem;
+    font-weight: 700;
+}
+
+#name {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+#message {
+    position: relative;
+    top: 2.5rem;
+    left: -0.1rem;
+    text-align: left;
+    padding: 1rem;
+    width: 32.8rem;
+}
+
+#number {
+    margin-right: 1rem;
+}
+
+#button {
+    font-size: 18px;
+    position: relative;
+    top: 3rem;
+    font-family: 'Super';
+    padding: 19px;
+    width: 33rem;
+    text-align: center;
+    border: 0;
+    color: white;
+    background-color: orangered;
+    padding-left: 40px;
+    border-radius: 4px;
+}
+
+input {
+    position: relative;
+    top: 1rem;
+    padding: 1rem;
+}
+
+#A3 {
+    position: relative;
+    left: -13rem;
+    font-size: 18px;
+    color: orangered;
+    font-family: 'signature';
+}
+
+.Team {
+    position: relative;
+    top: 33rem;
+}
+
+#A5 {
+    color: orangered;
+    font-size: 22px;
+    font-family: signature;
+}
+
+#A6 {
+    font-size: 24px;
+    font-family: super;
+}
+
+#ceo {
+    height: 15rem;
+    width: 15rem;
+    border-bottom-left-radius: 12rem;
+    border-bottom-right-radius: 12rem;
+    border-top-right-radius: 12rem;
+    border-top-left-radius: 12rem;
+}
+
+.member {
+    position: relative;
+    left: 36.5rem;
+    border-radius: 5px;
+    padding-top: 1rem;
+    height: 22rem;
+    width: 17rem;
+    box-shadow: 5px 5px 5px 5px gray;
+    background-color: white;
+    font-weight: 700;
+}
+
+#A7 {
+    color: orangered;
+    font-size: 25px;
+    font-family: signature;
+}
+
+#A8 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.Testimonial {
+    position: relative;
+    top: 50rem;
+}
+
+.client {
+    border: 2px solid gray;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    padding-top: 1rem;
+    font-weight: 600;
+    font-size: 18px;
+    left: 34rem;
+    height: 14rem;
+    width: 22rem;
+    position: relative;
+    top: 2rem;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.client:hover {
+    color: white;
+    background: orangered;
+}
+
+#A9 {
+    width: 3rem;
+    border-bottom-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+    border-top-right-radius: 6rem;
+    border-top-left-radius: 6rem;
+}
+
+.fa-location-dot {
+    font-size: 12px;
+    color: white;
+}
+
+.fa-phone {
+    color: white;
+    font-size: 12px;
+}
+
+.fa-envelope {
+    color: white;
+    font-size: 12px;
+}
+
+.Footer {
+    background-color: rgb(4, 4, 34);
+    width: 91.2rem;
+    height: 40rem;
+    position: relative;
+    left: -1rem;
+    top: 55rem;
+}
+
+.Company {
+    position: relative;
+    left: -20rem;
+    top: 3rem;
+    color: white;
+}
+
+.Contact {
+    position: relative;
+    top: -26rem;
+    left: 15rem;
+    color: white;
+}
+
+#company {
+    color: orangered;
+    font-family: signature;
+}
+
+.fa-location-dot {
+    font-size: 12px;
+    color: white;
+}
+
+.fa-phone {
+    color: white;
+    font-size: 12px;
+}
+
+#A10 {
+    width: 3rem;
+    border-bottom-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+    border-top-right-radius: 6rem;
+    border-top-left-radius: 6rem;
+}
+
+#A11 {
+    position: relative;
+    top: 1rem;
+    left: 6rem;
+    width: 22rem;
+    height: 4rem;
+}
+
+#A12 {
+    position: relative;
+    font-size: 17px;
+    background-color: orangered;
+    color: white;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    height: 3rem;
+    border-radius: 4px;
+    top: 1rem;
+    left: -1.5rem;
+    border: none;
+}
+
+#A13 {
+    position: relative;
+    left: 3.5rem;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(-360deg);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hideonMobile {
+        display: none;
+    }
+
+    body {
+        background-image: url(./Images/6436961_3312580.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .BodyText {
+        left: 0rem;
+    }
+
+    .BodyText,
+    b {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+    }
+
+    #btn1 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: bisque;
+        font-weight: 900;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 2rem;
+        font-size: 10px;
+    }
+
+    .BodyImage {
+        position: relative;
+        left: 15rem;
+        width: 0;
+    }
+
+    #b1 {
+        font-size: 10px;
+    }
+
+    .img1 {
+        width: 100px;
+        position: relative;
+        margin-top: -9rem;
+        left: 1rem;
+        height: 100px;
+    }
+
+    .img2 {
+        height: 100px;
+        width: 100px;
+        position: relative;
+        margin-top: 9rem;
+        left: -4rem;
+    }
+
+    .img3 {
+        width: 100px;
+        position: relative;
+        margin-top: -28rem;
+        left: 3rem;
+        height: 100px;
+    }
+
+    #img4 {
+        width: 250px;
+        height: 250px;
+    }
+
+    #p2 {
+        font-size: 9px;
+    }
+
+    .Master {
+        top: 40rem;
+        text-align: center;
+        position: relative;
+        left: 4rem;
+    }
+
+    .Quality {
+        top: 13rem;
+        text-align: center;
+        position: relative;
+        left: 4rem;
+    }
+
+    .Online {
+        top: 31rem;
+        text-align: center;
+        position: relative;
+        left: 4rem;
+    }
+
+    .Service {
+        top: 34rem;
+        text-align: center;
+        position: relative;
+        left: 4rem;
+    }
+
+    .imgd {
+        position: relative;
+        left: -6rem;
+        top: 40rem;
+        width: 0;
+    }
+
+    .bdimg1 {
+        position: relative;
+        left: -13rem;
+        width: 170px;
+        height: 180px;
+    }
+
+    .bdimg2 {
+        position: relative;
+        top: -10rem;
+        left: -1rem;
+        width: 130px;
+        height: 150px;
+    }
+
+    .bdimg3 {
+        position: relative;
+        top: -9rem;
+        left: -11rem;
+        width: 130px;
+        height: 150px;
+    }
+
+    .bdimg4 {
+        position: relative;
+        top: -19rem;
+        left: -1rem;
+        width: 170px;
+        height: 180px;
+    }
+
+    #Hwelc {
+        position: relative;
+        top: 21rem;
+        right: 5rem;
+    }
+
+    #p1 {
+        font-size: 18px;
+        position: relative;
+        left: -1rem;
+        top: -0.5rem;
+    }
+
+    .WELCOME {
+        position: relative;
+        font-size: 11px;
+        top: 19rem;
+        left: 0.8rem;
+    }
+
+    #Hwelc1 {
+        position: relative;
+        left: 1.5rem;
+        border-left: 6px solid orangered;
+    }
+
+    #Hwelc2 {
+        position: relative;
+        top: 2rem;
+        left: 1.5rem;
+        border-left: 6px solid orangered;
+    }
+
+    #b2 {
+        font-size: 14px;
+    }
+
+    #btn3 {
+        position: relative;
+        top: 5rem;
+        left: -6rem;
+        border-radius: 3px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .Fa-icons {
+        position: relative;
+        left: -6rem;
+        width: 0;
+    }
+
+    #food-menu {
+        font-size: 24px;
+    }
+
+    #food-menu2 {
+        font-size: 20px;
+    }
+
+    .fa-mug-hot {
+        font-size: 18px;
+    }
+
+    .fa-bowl-food {
+        font-size: 18px;
+    }
+
+    #fa-utensils {
+        font-size: 18px;
+    }
+
+    #lists {
+        border-radius: 0;
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 12px;
+        background-color: bisque;
+    }
+
+    .Food-list {
+        position: relative;
+        top: 29rem;
+        left: -18rem;
+    }
+
+    .Food-list2 {
+        position: relative;
+        top: 10rem;
+        left: -21rem;
+    }
+
+
+    #A2 {
+        font-size: 10px;
+    }
+
+    .sub-list {
+        padding: 1rem;
+        width: 10rem;
+        position: relative;
+        left: 20rem;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px gray;
+        background-color: white;
+        height: 8rem;
+    }
+
+    .sub-list1 {
+        padding: 1rem;
+        width: 10rem;
+        position: relative;
+        left: 20rem;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px gray;
+        background-color: white;
+        height: 8rem;
+    }
+
+    .sub-list2 {
+        padding: 1rem;
+        width: 6rem;
+        position: relative;
+        left: 20rem;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px gray;
+        background-color: white;
+        height: 8rem;
+    }
+
+    .sub-list3 {
+        padding: 1rem;
+        width: 6rem;
+        position: relative;
+        left: 20rem;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px gray;
+        background-color: white;
+        height: 8rem;
+    }
+
+    .sub-list4 {
+        padding: 1rem;
+        width: 6rem;
+        position: relative;
+        left: 19.5rem;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px gray;
+        background-color: white;
+        height: 8rem;
+    }
+
+    .sub-list5 {
+        padding: 1rem;
+        width: 6rem;
+        position: relative;
+        left: 19.5rem;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px gray;
+        background-color: white;
+        height: 8rem;
+    }
+
+    .VIDINP {
+        position: relative;
+        top: 43rem;
+        left: 1.7rem;
+    }
+
+    .Form {
+        margin-left: 2rem;
+    }
+
+    .vid {
+        position: relative;
+        left: -2rem;
+        background-color: rgb(4, 4, 34);
+        width: 26rem;
+    }
+
+    video {
+        position: relative;
+        top: -1rem;
+        left: -1rem;
+        width: 350px;
+        height: 300px;
+    }
+
+    #A3 {
+        position: relative;
+        top: 3rem;
+        left: -7rem;
+    }
+
+    #A4 {
+        position: relative;
+        color: white;
+        font-size: 40px;
+        font-family: 'liber';
+        font-weight: 700;
+        top: 2rem;
+        left: -0.5rem;
+    }
+
+    input {
+        position: relative;
+        top: 4rem;
+        padding: 1.5rem;
+        width: 20rem;
+        text-align: left;
+    }
+
+    #name {
+        margin-bottom: 1.5rem;
+    }
+
+    #email {
+        position: relative;
+        left: -0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #location {
+        position: relative;
+        left: -0.3rem;
+    }
+
+    #number {
+        margin-bottom: 1.5rem;
+    }
+
+    #message {
+        position: relative;
+        top: 6rem;
+        left: -0.2rem;
+        text-align: left;
+        padding: 1.7rem;
+        width: 20rem;
+    }
+
+    #button {
+        font-size: 18px;
+        position: relative;
+        top: 7rem;
+        font-family: 'Super';
+        padding: 14px;
+        width: 20.3rem;
+        text-align: center;
+        border: 0;
+        color: white;
+        background-color: orangered;
+        padding-left: 40px;
+        border-radius: 4px;
+    }
+
+    .INPUT {
+        width: 28rem;
+        height: 49rem;
+        position: relative;
+        left: -4rem;
+        top: -0.5rem;
+    }
+
+    .Team {
+        position: relative;
+        text-align: center;
+        top: 46rem;
+    }
+
+    #A6 {
+        font-size: 24px;
+    }
+
+    .member {
+        position: relative;
+        left: 3rem;
+        height: 26rem;
+        width: 20rem;
+        box-shadow: 5px 5px 5px 5px gray;
+    }
+
+    #ceo {
+        position: relative;
+        height: 18rem;
+        width: 18rem;
+        top: 1rem;
+        border-bottom-left-radius: 12rem;
+        border-bottom-right-radius: 12rem;
+        border-top-right-radius: 12rem;
+        border-top-left-radius: 12rem;
+    }
+
+    #A7 {
+        color: orangered;
+        font-size: 25px;
+        font-family: signature;
+    }
+
+    #A8 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .Testimonial {
+        position: relative;
+        top: 50rem;
+    }
+
+    .client {
+        position: relative;
+        border-radius: 5px;
+        padding-top: 1rem;
+        font-size: 15px;
+        color: black;
+        left: 4rem;
+        height: 13rem;
+        width: 18rem;
+        position: relative;
+        top: 2rem;
+    }
+
+    #A9 {
+        width: 3rem;
+        border-bottom-left-radius: 6rem;
+        border-bottom-right-radius: 6rem;
+        border-top-right-radius: 6rem;
+        border-top-left-radius: 6rem;
+    }
+
+    .Footer {
+        background-color: rgb(4, 4, 34);
+        width: 28rem;
+        height: 60rem;
+        position: relative;
+        left: -1rem;
+        top: 57rem;
+    }
+
+    .Company {
+        position: relative;
+        left: -5rem;
+        top: 3rem;
+        color: white;
+    }
+
+    .Contact {
+        position: relative;
+        top: 6rem;
+        left: -5rem;
+        color: white;
+    }
+
+    #company {
+        color: orangered;
+        font-family: signature;
+    }
+
+    .fa-location-dot {
+        font-size: 12px;
+        color: white;
+    }
+
+    .fa-phone {
+        color: white;
+        font-size: 12px;
+    }
+
+    #A10 {
+        width: 3rem;
+        border-bottom-left-radius: 6rem;
+        border-bottom-right-radius: 6rem;
+        border-top-right-radius: 6rem;
+        border-top-left-radius: 6rem;
+    }
+
+    #A11 {
+        position: relative;
+        top: 1rem;
+        left: 6rem;
+        width: 22rem;
+        height: 4rem;
+    }
+
+    #A12 {
+        position: relative;
+        font-size: 17px;
+        background-color: orangered;
+        color: white;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        height: 3rem;
+        top: -2.5rem;
+        left: 13rem;
+    }
+
+    #A13 {
+        position: relative;
+        left: 3.5rem;
+    }
 }
