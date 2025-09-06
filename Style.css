@@ -1336,7 +1336,7 @@ input {
 
     #VIDINP {
         position: relative;
-        top: 43rem;
+        top: 42rem;
         left: 3rem;
     }
 
@@ -1428,10 +1428,10 @@ input {
 
     .INPUT {
         width: 28rem;
-        height: 49rem;
+        height: 52rem;
         position: relative;
         left: -4rem;
-        top: -0.5rem;
+        top: -3rem;
     }
 
     .Team {
